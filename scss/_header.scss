@@ -1,0 +1,47 @@
+header {
+	// overflow: hidden;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: url(../img/intro-flourish-02.svg);
+		width: 100%;
+		top: -50px;
+		right: -73%;
+		opacity: .2;
+		z-index: -1;
+		@media screen and (min-width: 47.5em){
+			top: -90px;
+			right: -62%;
+		}
+		@media screen and (min-width: 64em){
+			top: -100px;
+			right: -71%;
+		}
+	}
+	h1 {
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		letter-spacing: 6px;
+		color: #212121;
+		margin: 0;
+		overflow:hidden;
+		@media screen and (min-width: 47.5em){
+			font-size: 1.875rem;
+		}
+	}
+	.trigger-menu {
+		img {
+			position: relative;
+			top: -1px;
+			float: right;
+			width: 48px;
+		}
+		@media screen and (min-width: 47.5em){
+			img {
+				top: 0;
+				width: 64px;
+			}
+		}
+	}
+
+}

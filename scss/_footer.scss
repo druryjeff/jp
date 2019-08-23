@@ -1,0 +1,236 @@
+.nav-areas a {
+	position: relative;
+	display: block;
+	border: .5em solid #fff;
+	overflow: hidden;
+	z-index: 2;
+	margin-bottom: 1rem;
+	@media screen and (min-width:47em){
+		margin-bottom: 0;
+	}
+	@media screen and (min-width:64em){
+		border: 1em solid #fff;
+	}
+	h4 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		z-index: 2;
+		color: #fff;
+		font-size: 1.25rem;
+		text-shadow: 0 0 20px rgba(0,0,0,.8);
+		@media screen and (min-width:64em){
+			font-size: 1.5rem;
+		}
+	}
+	&::before {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.4);
+		z-index: 1;
+		transition: all .4s cubic-bezier(.5, 0, .5, 1);
+	}
+	&:hover::before {
+		background-color: rgba(0,0,0,.8);
+	}
+	img {
+		position: relative;
+		display: block;
+		transition: all .4s cubic-bezier(.5, 0, .5, 1);
+		width: 100%;
+	}
+	&:hover img {
+		transform: scale(1.1);
+	}
+	&::after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 3;
+		top: 100%;
+		transition: all .4s cubic-bezier(.5, 0, .5, 1);
+	}
+	&.nav-foundation::after {
+		background: url(../img/nav-logo-foundation-s.png);
+		background-size: cover !important;
+		@media screen and (min-width: 47.5em){
+			background: url(../img/nav-logo-foundation.png);
+		}
+	}
+	&.nav-artwork::after {
+		background: url(../img/nav-logo-artwork-s.png);
+		background-size: cover !important;
+		@media screen and (min-width: 47.5em){
+			background: url(../img/nav-logo-artwork.png);
+		}
+	}
+	&.nav-television::after {
+		background: url(../img/nav-logo-television-s.png);
+		background-size: cover !important;
+		@media screen and (min-width: 47.5em){
+			background: url(../img/nav-logo-television.png);
+		}
+	}
+	&.nav-books::after {
+		background: url(../img/nav-logo-books-s.png);
+		background-size: cover !important;
+		@media screen and (min-width: 47.5em){
+			background: url(../img/nav-logo-books.png);
+		}
+	}
+	&.nav-foundation:hover::after,
+	&.nav-artwork:hover::after,
+	&.nav-television:hover::after,
+	&.nav-books:hover::after {
+		top: 0;
+	}
+	
+}
+
+.footer-content {
+	position: relative;
+	z-index: 1;
+	@media screen and (min-width: 47.5em){
+		padding: 1.25rem 0;
+	}
+	@media screen and (min-width: 64em){
+		padding: 3rem 0;
+	}
+	h1 {
+		text-transform: uppercase;
+		color: #616161;
+		font-size: 1.25rem;
+		margin-bottom: .5rem;
+		letter-spacing: 6px;
+		@media screen and (min-width: 47.5em){
+			font-size: 1.5rem;
+			line-height: 1.4;
+			margin-bottom: 1.25rem;
+		}
+		@media screen and (min-width: 64em){
+			margin-bottom: 1.5rem;
+		}
+	}
+	p {
+		font-size: 1rem;
+		line-height: 1.3;
+		@media screen and (min-width: 47.5em){
+			line-height: 1.4;
+		}
+		@media screen and (min-width: 64em){
+			margin-bottom: 1.5rem;
+		}
+	}
+	.orbit-previous, .orbit-next {
+	    position: static;
+	    padding: 0;
+	    color: #616161;
+	    transform: none; // override
+	}
+	.orbit-container {
+		// this should get added to bottom of container, but it doesn't
+		// this is the amount of mottom margin used by p elements
+		margin-bottom: 1rem; 
+	}
+	.orbit-controls ul {
+		margin: 1rem 0 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin-right: .5rem;
+			color: #212121;
+		}
+		.orbit-previous:hover,
+		.orbit-next:hover,
+		.orbit-previous:active,
+		.orbit-next:active,
+		.orbit-previous:focus,
+		.orbit-next:focus {
+			background-color: transparent;
+			cursor: pointer;
+		}
+		.orbit-curr-slide {
+			opacity: .2;
+			&:hover {
+				cursor: auto;
+			}
+		}
+		
+	}
+	.orbit-bullets {
+		text-align: left;
+		display: flex;
+		margin-top: .25rem;
+		margin-bottom: 1.5rem;
+		display: none;
+		@media screen and (min-width:47.5em){
+			display: flex;
+			margin-top: 1rem;
+			margin-bottom: 2.25rem;
+		}
+	}
+	.orbit-bullets button {
+		width: 1rem !important;
+		height: 2px;
+		margin: 0;
+		border-radius: 0;
+		background-color: #757575;
+		opacity: .2;
+		display: block;
+		&.is-active {
+			background-color: #757575;
+			opacity: 1;
+
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.footer-copyright {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 0;
+	background-color: #d2c8bf;
+	p {
+		font-size: .75rem;
+		margin-bottom: .5rem;
+		@media screen and (min-width:47.5em){
+			margin-bottom: 1rem;
+		}
+	}
+	img {
+		width: 100%;
+		display: block;
+		mix-blend-mode: multiply;
+	}
+	.hide-for-large {
+		text-align: right;
+	}
+	a {
+		position: relative;
+		top: 3.75px;
+		font-size: 1.25rem;
+		color: #616161;
+		&:first-child {
+			margin-left: .5rem;
+			margin-right: .5rem;
+		}
+		@media screen and (min-width:64em){
+			&:first-child {
+				margin-right: .25rem;
+			}
+		}
+		&:hover {
+			color: #212121;
+		}
+	}
+}

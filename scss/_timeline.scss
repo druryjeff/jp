@@ -1,0 +1,69 @@
+.timeline {
+	margin: 3rem 0 0;
+	padding: 3rem 0 0;
+	background: rgb(194,198,186);
+	background: linear-gradient(180deg, rgba(194,198,186,.3) 35%, rgba(255,255,255,0) 100%);
+	@media screen and (min-width: 47.5em){
+		margin: 3rem 0;
+		padding: 3rem 0;
+	}
+	@media screen and (min-width: 64em){
+		display: block;
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 100%;
+		margin: auto;
+		z-index: 0;
+		padding: 0;
+		margin: 0;
+		background: none;
+	}
+	.frame {
+		border: .5rem solid #fff;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		@media screen and (min-width: 64em){
+			margin-right: 3rem;
+		}
+	}
+	li {
+		position: relative;
+		margin-bottom: 1rem;
+	}
+	li::before {
+		position: absolute;
+		content: '';
+		width: 5%;
+		height: 1px;
+		left: -10%;
+		top: 7px;
+		background-color: #616161;
+		@media screen and (min-width: 64em){
+			height: 1px;
+			width: 100%;
+			left: -105%;
+			background-color: #ccc;
+		}
+	}
+	h4 {
+		font-size: .75rem;
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	p {
+		font-size: .875rem;
+		line-height: 1.2;
+		margin: 0 0 .5rem;
+		@media screen and (min-width: 64em){
+			font-size: .75rem;
+		}
+	}
+	a {
+		color: #212121;
+	}
+}

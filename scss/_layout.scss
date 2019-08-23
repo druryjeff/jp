@@ -1,0 +1,52 @@
+body {
+	background: url(../img/bg-top.jpg) no-repeat top left;
+}
+
+.top-wrapper {
+	position: relative;
+	z-index: 1;
+	padding-top: 1rem;
+	margin-bottom: 100vh;
+	width:100%;
+	background: #fff url(../img/bg-top.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	box-shadow: 0 0 40px rgba(0,0,0,.4);
+	overflow: hidden;
+	@media screen and (min-width: 47.5em){
+		padding-top: 1.875rem;
+		background-size: 100%;
+		background-position: top left;
+	}
+	@media screen and (min-width: 64em){
+		padding-top: 3rem;
+	}
+}
+
+.mid-wrapper {
+	position: relative;
+	background: url(../img/food52-top-potato.jpg) no-repeat bottom left;
+	background-size: 100%;
+	@media screen and (min-width: 47.5em){
+		margin-top: -7rem;
+	}
+}
+
+.bottom-wrapper {
+	top: 0;
+	height: 100vh;
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	background: #d2c8bf url(../img/bg-bottom.jpg) no-repeat top right;
+	background-size: 100%;
+	padding-top: 3rem;
+	@media screen and (min-width: 64em){
+		padding-top: 3.75rem;
+	}
+}
+
+#nav-anchor {
+	height: 1.5rem;
+}
+

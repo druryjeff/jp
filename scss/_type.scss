@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'verbregular';
+    src: url('fonts/vrbreg-webfont.woff2') format('woff2'),
+         url('fonts/vrbreg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'verbbold';
+    src: url('fonts/vrbbol-webfont.woff2') format('woff2'),
+         url('fonts/vrbbol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'verblight';
+    src: url('fonts/vrblgt-webfont.woff2') format('woff2'),
+         url('fonts/vrblgt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'verbregular';
+    color: #757575;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'verbregular';
+	font-weight: normal;
+}
+
+.button.hollow {
+    border-color: #616161;
+    font-family: 'verbregular';
+    font-size: 1rem;
+    color: #616161;
+    border-radius: 4px;
+    &:hover {
+        color: #212121;
+        border-color: #616161 !important;
+    }
+}

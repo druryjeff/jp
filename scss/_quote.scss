@@ -1,0 +1,49 @@
+.quote-1 {
+	position: relative;
+	img:not(.frame){
+		margin-left: -1rem; // pull back to grid line, making up for space needed for hanging punctuation
+	}
+	&::before {
+		@media screen and (min-width: 47.5em){
+			position: absolute;
+			content: url(../img/intro-flourish-03.svg);
+			width: 100%;
+			right: -30%;
+			top: -70px;
+			opacity: .2;
+			z-index: -1;
+		}
+		@media screen and (min-width: 64em){
+			width: 100%;
+			right: -47%;
+			top: 15px;
+		}
+	}
+}
+
+.quote-2 {
+	padding: 4.5rem 0 6rem;
+	@media screen and (min-width: 47.5em){
+		margin-top: 0;
+		padding: 7.5rem 0 6rem;
+	}
+	@media screen and (min-width: 64em){
+		padding: 10rem 0 6rem;
+	}
+}
+
+.frame {
+	margin-bottom: 2.25rem;
+	border: 1em solid #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	@media screen and (min-width: 47.5em){
+		margin-bottom: 0;
+	}
+}
+
+.news-frame {
+	margin-top: 3.75rem;
+	@media screen and (min-width: 47.5em){
+		margin-top: 0;
+	}
+}
