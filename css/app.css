@@ -671,21 +671,22 @@ header .trigger-menu img {
   position: relative;
   margin-bottom: 1rem;
 }
-.timeline li::before {
-  position: absolute;
-  content: "";
-  width: 5%;
-  height: 1px;
-  left: -10%;
-  top: 7px;
-  background-color: #616161;
+
+@media screen and (min-width: 47.5em) {
+  .timeline li::before {
+    position: absolute;
+    content: url(../img/whisk.svg);
+    width: 20px;
+    left: -10%;
+    top: -6px;
+    opacity: .3;
+  }
 }
+
 @media screen and (min-width: 64em) {
   .timeline li::before {
-    height: 1px;
-    width: 100%;
-    left: -105%;
-    background-color: #ccc;
+    left: -15%;
+    top: -5px;
   }
 }
 .timeline h4 {
