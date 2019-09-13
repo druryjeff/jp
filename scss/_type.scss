@@ -1,42 +1,56 @@
-@font-face {
-    font-family: 'verbregular';
-    src: url('fonts/vrbreg-webfont.woff2') format('woff2'),
-         url('fonts/vrbreg-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+/**
+ * @license
+ * MyFonts Webfont Build ID 3807325, 2019-09-13T16:33:59-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: VerbRegular-Bold by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/verb/bold/
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: VerbLight by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/verb/light/
+ * Licensed pageviews: Unlimited
+ * 
+ * Webfont: VerbRegular by Yellow Design Studio
+ * URL: https://www.myfonts.com/fonts/yellow-design/verb/regular/
+ * Licensed pageviews: 500,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3807325
+ * Webfonts copyright: Copyright (c) 2013 by Yellow Design Studio. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
 
-@font-face {
-    font-family: 'verbbold';
-    src: url('fonts/vrbbol-webfont.woff2') format('woff2'),
-         url('fonts/vrbbol-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3a185d");
 
-}
+@font-face {font-family: 'VerbRegular-Bold';src: url('webfonts/3A185D_0_0.eot');src: url('webfonts/3A185D_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A185D_0_0.woff2') format('woff2'),url('webfonts/3A185D_0_0.woff') format('woff'),url('webfonts/3A185D_0_0.ttf') format('truetype');}
+@font-face {font-family: 'VerbLight';src: url('webfonts/3A185D_1_0.eot');src: url('webfonts/3A185D_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A185D_1_0.woff2') format('woff2'),url('webfonts/3A185D_1_0.woff') format('woff'),url('webfonts/3A185D_1_0.ttf') format('truetype');}
+@font-face {font-family: 'VerbRegular';src: url('webfonts/3A185D_2_0.eot');src: url('webfonts/3A185D_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3A185D_2_0.woff2') format('woff2'),url('webfonts/3A185D_2_0.woff') format('woff'),url('webfonts/3A185D_2_0.ttf') format('truetype');} 
 
-@font-face {
-    font-family: 'verblight';
-    src: url('fonts/vrblgt-webfont.woff2') format('woff2'),
-         url('fonts/vrblgt-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+$font-verb-light: 'VerbLight';
+$font-verb-regular: 'VerbRegular';
+$font-verb-bold: 'VerbRegular-Bold';
 
 body {
-	font-family: 'verbregular';
+	font-family: $font-verb-regular;
     color: #757575;
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'verbregular';
+	font-family: $font-verb-regular;
 	font-weight: normal;
 }
 
 .button.hollow {
     border-color: #616161;
-    font-family: 'verbregular';
+    font-family: $font-verb-regular;
     font-size: 1rem;
     color: #616161;
     border-radius: 4px;
