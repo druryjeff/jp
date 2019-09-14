@@ -49,10 +49,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .button.hollow {
-    border-color: #616161;
     font-family: $font-verb-regular;
     font-size: 1rem;
     color: #616161;
+    border-color: #616161;
     border-radius: 4px;
     &:hover {
         color: #212121;

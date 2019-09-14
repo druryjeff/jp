@@ -13,21 +13,24 @@
 		top: 3rem;
 		left: 0;
 		width: 100%;
-		margin: auto;
 		z-index: 0;
-		padding: 0;
 		margin: 0;
+		padding: 0;
 		background: none;
-	}
-	.frame {
-		border: .5rem solid #fff;
 	}
 	ul {
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
-		@media screen and (min-width: 64em){
+		@media screen and (min-width: 47.5em){
+			margin-top: 4rem;
 			margin-right: 3rem;
+			margin-left: -2rem;
+		}
+		@media screen and (min-width: 64em){
+			margin-top: 0;
+			margin-right: 3rem;
+			margin-left: 0;
 		}
 	}
 	li {
@@ -36,28 +39,29 @@
 	}
 	li::before {
 		@media screen and (min-width: 47.5em){
+			// Icon made by Freepik (https://www.flaticon.com/authors/freepik) from www.flaticon.com
+			content: url(../img/timeline-icon.svg);
 			position: absolute;
-			content: url(../img/whisk.svg);
-			width: 20px;
-			left: -10%;
 			top: -6px;
+			left: -10%;
+			width: 20px;
 			opacity: .3;
 		}
 		@media screen and (min-width: 64em){
-			left: -15%;
     		top: -5px;
+			left: -15%;
 		}
 	}
 	h4 {
-		font-size: .75rem;
 		margin: 0;
+		font-size: .75rem;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 	}
 	p {
+		margin: 0 0 .5rem;
 		font-size: .875rem;
 		line-height: 1.2;
-		margin: 0 0 .5rem;
 		@media screen and (min-width: 64em){
 			font-size: .75rem;
 		}

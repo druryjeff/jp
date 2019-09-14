@@ -1,10 +1,10 @@
 .nav-areas a {
-	position: relative;
 	display: block;
-	border: .5em solid #fff;
 	overflow: hidden;
+	position: relative;
 	z-index: 2;
 	margin-bottom: 1rem;
+	border: .5em solid #fff;
 	@media screen and (min-width:47em){
 		margin-bottom: 0;
 	}
@@ -15,12 +15,12 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%);
-		text-align: center;
 		z-index: 2;
-		color: #fff;
 		font-size: 1.25rem;
 		text-shadow: 0 0 20px rgba(0,0,0,.8);
+		text-align: center;
+		color: #fff;
+		transform: translate(-50%,-50%);
 		@media screen and (min-width:64em){
 			font-size: 1.5rem;
 		}
@@ -30,8 +30,8 @@
 		content: '';
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,.4);
 		z-index: 1;
+		background-color: rgba(0,0,0,.4);
 		transition: all .4s cubic-bezier(.5, 0, .5, 1);
 	}
 	&:hover::before {
@@ -40,8 +40,8 @@
 	img {
 		position: relative;
 		display: block;
-		transition: all .4s cubic-bezier(.5, 0, .5, 1);
 		width: 100%;
+		transition: all .4s cubic-bezier(.5, 0, .5, 1);
 	}
 	&:hover img {
 		transform: scale(1.1);
@@ -51,8 +51,8 @@
 		width: 100%;
 		height: 100%;
 		position: absolute;
-		z-index: 3;
 		top: 100%;
+		z-index: 3;
 		transition: all .4s cubic-bezier(.5, 0, .5, 1);
 	}
 	&.nav-foundation::after {
@@ -89,28 +89,31 @@
 	&.nav-books:hover::after {
 		top: 0;
 	}
-	
 }
 
 .footer-content {
 	position: relative;
 	z-index: 1;
+	padding: 1.25rem 0;
 	@media screen and (min-width: 47.5em){
-		padding: 1.25rem 0;
+		padding: 4rem 0;
 	}
 	@media screen and (min-width: 64em){
 		padding: 3rem 0;
 	}
+	@media screen and (min-height: 43.75em) and (min-width: 64em){
+		padding: 7rem 0;
+	}
 	h1 {
-		text-transform: uppercase;
-		color: #616161;
-		font-size: 1.25rem;
 		margin-bottom: .5rem;
+		font-size: 1.25rem;
+		text-transform: uppercase;
 		letter-spacing: 6px;
+		color: #616161;
 		@media screen and (min-width: 47.5em){
+			margin-bottom: 1.25rem;
 			font-size: 1.5rem;
 			line-height: 1.4;
-			margin-bottom: 1.25rem;
 		}
 		@media screen and (min-width: 64em){
 			margin-bottom: 1.5rem;
@@ -134,7 +137,7 @@
 	}
 	.orbit-container {
 		// this should get added to bottom of container, but it doesn't
-		// this is the amount of mottom margin used by p elements
+		// this is the amount of bottom margin used by p elements
 		margin-bottom: 1rem; 
 	}
 	.orbit-controls ul {
@@ -164,11 +167,10 @@
 		
 	}
 	.orbit-bullets {
-		text-align: left;
-		display: flex;
+		display: none;
 		margin-top: .25rem;
 		margin-bottom: 1.5rem;
-		display: none;
+		text-align: left;
 		@media screen and (min-width:47.5em){
 			display: flex;
 			margin-top: 1rem;
@@ -176,17 +178,16 @@
 		}
 	}
 	.orbit-bullets button {
+		display: block;
 		width: 1rem !important;
 		height: 2px;
 		margin: 0;
 		border-radius: 0;
 		background-color: #757575;
 		opacity: .2;
-		display: block;
 		&.is-active {
 			background-color: #757575;
 			opacity: 1;
-
 		}
 		&:hover {
 			cursor: pointer;
@@ -201,16 +202,28 @@
 	z-index: 0;
 	background-color: #d2c8bf;
 	p {
-		font-size: .75rem;
 		margin-bottom: .5rem;
+		font-size: .75rem;
 		@media screen and (min-width:47.5em){
 			margin-bottom: 1rem;
 		}
 	}
 	img {
-		width: 100%;
-		display: block;
-		mix-blend-mode: multiply;
+		display: none;
+		@media screen and (min-height: 31.25em){
+			display: block;
+			position: relative;
+			bottom: -160px;
+			width: 100%;
+			mix-blend-mode: multiply;
+			transition: bottom .4s;
+		}
+		@media screen and (min-height: 35em){
+			bottom: -100px;
+		}
+		@media screen and (min-height: 42em){
+			bottom: 0;
+		}
 	}
 	.hide-for-large {
 		text-align: right;
