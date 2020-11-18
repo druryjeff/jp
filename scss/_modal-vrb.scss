@@ -1,0 +1,45 @@
+$color-blue-dark: #001D4D;
+$color-blue-light: #C5DAE7;
+$color-green-dark: #8FAC58;
+$color-grey-warm: #404040;
+$color-grey-dark: #212121;
+$color-grey-mid: #757575;
+$color-grey-light: #bdbdbd;
+
+.vrb {
+	border: 1rem solid $color-green-dark;
+	font-family: $font-verb-regular;
+	padding: 3rem;
+	width: 90%;
+	color: $color-blue-dark;
+	h1 {
+		font-family: $font-verb-bold;
+		margin: 0;
+		line-height: 1;
+		font-size: 1.5rem;
+		font-weight: 700;
+		@media screen and (min-width: 67.5em){
+			font-size: 2rem;
+		}
+	}
+	p {
+		font-size: 1.125rem;
+		line-height: 1.4;
+		margin: 1rem 0 1.5rem;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	.btn {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 2.5;
+		font-size: 1rem;
+		padding: 0 1rem;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		background-color: $color-green-dark;
+		color: #fff;
+	}
+}

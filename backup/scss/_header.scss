@@ -1,0 +1,44 @@
+header {
+	padding-top: 1.5rem;
+	@media screen and (min-width: 47.5em){
+		padding-top: 1rem;
+	}
+	@media screen and (min-width: 64em){
+		padding-top: .5rem;
+	}
+	h1 {
+		margin: 0;
+		font-size: 1.25rem;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		color: #212121;
+		@media screen and (min-width: 47.5em){
+			margin-right: 1.5rem;
+			font-size: 1.5rem;
+			text-align: right;
+		}
+		@media screen and (min-width: 64em){
+			margin-right: 3rem;
+			font-size: 1.875rem;
+			letter-spacing: 6px;
+		}
+	}
+	.trigger-menu {
+		text-align: right;
+		a {
+			display: block;
+		}
+		img {
+			position: relative;
+			width: 48px;
+			@media screen and (min-width: 47.5em){
+				width: 56px;
+				margin-top: -3px; // optical adjustment
+			}
+			@media screen and (min-width: 64em){
+				width: 64px;
+				margin-top: -4px; // optical adjustment
+			}
+		}
+	}
+}

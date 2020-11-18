@@ -1,0 +1,72 @@
+.timeline {
+	margin: 3rem 0 0;
+	padding: 3rem 0 0;
+	background: rgb(194,198,186);
+	background: linear-gradient(180deg, rgba(194,198,186,.3) 35%, rgba(255,255,255,0) 100%);
+	@media screen and (min-width: 47.5em){
+		margin: 3rem 0;
+		padding: 3rem 0;
+	}
+	@media screen and (min-width: 64em){
+		display: block;
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 100%;
+		z-index: 0;
+		margin: 0;
+		padding: 0;
+		background: none;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		@media screen and (min-width: 47.5em){
+			margin-top: 4rem;
+			margin-right: 3rem;
+			margin-left: -2rem;
+		}
+		@media screen and (min-width: 64em){
+			margin-top: 0;
+			margin-right: 3rem;
+			margin-left: 0;
+		}
+	}
+	li {
+		position: relative;
+		margin-bottom: 1rem;
+	}
+	li::before {
+		@media screen and (min-width: 47.5em){
+			// Icon made by Freepik (https://www.flaticon.com/authors/freepik) from www.flaticon.com
+			content: url(../img/timeline-icon.svg);
+			position: absolute;
+			top: -6px;
+			left: -10%;
+			width: 20px;
+			opacity: .3;
+		}
+		@media screen and (min-width: 64em){
+    		top: -5px;
+			left: -15%;
+		}
+	}
+	h4 {
+		margin: 0;
+		font-size: .75rem;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
+	p {
+		margin: 0 0 .5rem;
+		font-size: .875rem;
+		line-height: 1.2;
+		@media screen and (min-width: 64em){
+			font-size: .75rem;
+		}
+	}
+	a {
+		color: #212121;
+	}
+}

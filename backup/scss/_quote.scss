@@ -1,0 +1,50 @@
+.quote-1 {
+	position: relative;
+	&::before {
+		@media screen and (min-width: 47.5em){
+			content: url(../img/intro-flourish-03.svg);
+			position: absolute;
+			width: 100%;
+			top: 17rem;
+			right: -35%;
+			z-index: 1;
+			opacity: .2;
+		}
+		@media screen and (min-width: 64em){
+			width: 100%;
+			top: 20rem;
+			right: -45%;
+		}
+	}
+}
+
+.quote-2 {
+	padding: 4.5rem 0 6rem;
+	@media screen and (min-width: 47.5em){
+		margin-top: 0;
+		padding: 7.5rem 0 6rem;
+	}
+	@media screen and (min-width: 64em){
+		padding: 10rem 0 6rem;
+	}
+}
+
+.frame {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 2.25rem;
+	margin-left: -1rem;
+	border: 1em solid #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	box-sizing: content-box;
+	@media screen and (min-width: 47.5em){
+		margin-bottom: 0;
+	}
+}
+
+.news-frame {
+	margin-top: 3.75rem;
+	@media screen and (min-width: 47.5em){
+		margin-top: 0;
+	}
+}

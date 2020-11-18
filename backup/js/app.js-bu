@@ -1,0 +1,80 @@
+$(document).foundation();
+
+// Jump link to footer
+
+$('.trigger-menu a').click(function(e){
+    e.preventDefault();
+    var target = $(this).attr('href');
+    var top = $(target).offset().top;
+    $('html,body').animate({
+      scrollTop: top
+    },1000,$.bez([.5, 0, .5, 1]));
+  });
+
+// Open links in new window
+
+$('.nav-areas a').attr('target','_blank');
+
+// Orbit Slider
+
+// hide prevoius/next at beginning/end of cycle
+
+var slides = $('.orbit-slide').length;
+$('.orbit-previous').addClass('orbit-curr-slide');
+
+$('.orbit-controls').click('li',function() {
+    if( $('.orbit-slide.is-active').attr('data-slide') == 0 ) {
+      $('.orbit-previous').addClass('orbit-curr-slide');
+    } else if ( $('.orbit-slide.is-active').attr('data-slide') == (slides-1) ) {
+      $('.orbit-next').addClass('orbit-curr-slide');
+    } else {
+      $('.orbit-controls li').removeClass('orbit-curr-slide');
+    }
+});
+
+
+
+// Text Splitting
+
+Splitting();
+
+// var bigYellowCircle = document.querySelector("#bigYellowCircle");
+// var blueSquare = document.querySelector("#blueSquare");
+// var greenPentagon = document.querySelector("#greenPentagon");
+// var status = 0;
+
+function setTranslate(xPos, yPos, el) {
+  el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+}
+ 
+window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+var xScrollPosition;
+var yScrollPosition;
+ 
+function scrollLoop() {
+  xScrollPosition = window.scrollX;
+  yScrollPosition = window.scrollY;
+
+  // if( yScrollPosition > 0) {
+  //   $('.splitting .char').addClass('anim-in').removeClass('anim-out');
+  //   status = 1;
+  // } else if(yScrollPosition == 0 && status==1){
+  //   $('.splitting .char').removeClass('anim-in').addClass('anim-out');     status = 0;
+  // }
+  
+  //   if( yScrollPosition > 600) {
+  //   $('.splitting .char').removeClass('anim-in').addClass('anim-out');     status = 0;
+  // } 
+  
+  // if( yScrollPosition > 1200) {
+  //   $('.splitting .char').removeClass('anim-out').addClass('anim-in');     status = 0;
+  // } 
+
+  // setTranslate(0, yScrollPosition * -0.2, bigYellowCircle);
+  // setTranslate(0, yScrollPosition * -1.5, blueSquare);
+  // setTranslate(0, yScrollPosition * .25, greenPentagon);
+  
+  requestAnimationFrame(scrollLoop);
+}
+

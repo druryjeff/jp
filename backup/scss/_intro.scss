@@ -1,0 +1,60 @@
+.intro {
+	padding: 1.5rem 0 1rem;
+	@media screen and (min-width: 47.5em){
+		padding: 1.5rem 0 3rem 0;
+	}
+	blockquote {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		&::before {
+			content: url(../img/intro-flourish.svg);
+			position: absolute;
+			left: -50px;
+			top: 270px;
+			z-index: -1;
+			width: 100%;
+			opacity: .2;
+			@media screen and (min-width:47.5em){
+				left: -80px;
+				top: 70px;
+			}
+			@media screen and (min-width:64em){
+				left: 60px;
+				top: 130px;
+			}
+		}
+		p {
+			position:relative;
+			margin-top: 1rem;
+			font-family: $font-verb-light;
+			font-size: 1rem;
+			text-transform: uppercase;
+			text-align: center;
+			color: #616161;
+			@media screen and (min-width:47.5em){
+				margin-top: 0;
+				margin-right: 1.5rem;
+				font-size: 1.125rem;
+				line-height: 1.4;
+				text-align: right;
+			}
+			@media screen and (min-width:64em){
+				margin-right: 3rem;
+				font-size: 1.5rem;
+			}
+		}
+	}
+	img {
+		box-shadow: 0 0 20px rgba(0,0,0,.1);
+	}
+	img + p {
+		margin: .25rem 0 1rem;
+		font-size: .75rem;
+		text-align: right;
+		@media screen and (min-width:47.5em){
+			margin-bottom: 0;
+		}
+
+	}
+}

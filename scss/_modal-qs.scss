@@ -1,0 +1,63 @@
+$color-yellow: #EAC64B;
+$color-blue-dark: #10385B;
+$color-blue-light: #198DB4;
+
+.book-quick-and-simple {
+	border: 1rem solid $color-blue-light;
+	font-family: $font-brandon;
+	padding: 3rem;
+	width: 70%;
+	color: $color-blue-dark;
+	.grid-x {
+		.cell:last-child {
+			display: flex;
+			.content {
+				margin: auto;
+			}
+		}
+	}
+	h1 {
+		font-family: $font-brandon;
+		margin: 0;
+		line-height: 1;
+		font-size: 1.5rem;
+		font-weight: 700;
+		@media screen and (min-width: 67.5em){
+			font-size: 2rem;
+		}
+		&::before {
+			content: 'Order Today';
+			display: block;
+			text-transform: uppercase;
+			font-size: 1.25rem;
+			color: $color-blue-light;
+			margin-bottom: 1rem;
+		}
+	}
+	p {
+		font-size: 1.25rem;
+		line-height: 1.4;
+		margin: 1rem 0 1.5rem;
+		&:last-child {
+			margin: 0;
+		}
+	}
+	img {
+		margin-bottom: 1.5rem;
+		@media screen and (min-width: 47.5em){
+			margin-bottom: 0;
+		}
+	}
+	.btn {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		line-height: 2.5;
+		font-size: 1rem;
+		padding: 0 1rem;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		background-color: $color-yellow;
+		color: $color-blue-dark;
+	}
+}

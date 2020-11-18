@@ -598,37 +598,4 @@ header {
   .timeline a {
     color: #212121; }
 
-.vrb {
-  border: 1rem solid #8FAC58;
-  font-family: "VerbRegular";
-  padding: 3rem;
-  width: 90%;
-  color: #001D4D; }
-  .vrb h1 {
-    font-family: "VerbRegular-Bold";
-    margin: 0;
-    line-height: 1;
-    font-size: 1.5rem;
-    font-weight: 700; }
-    @media screen and (min-width: 67.5em) {
-      .vrb h1 {
-        font-size: 2rem; } }
-  .vrb p {
-    font-size: 1.125rem;
-    line-height: 1.4;
-    margin: 1rem 0 1.5rem; }
-    .vrb p:last-child {
-      margin: 0; }
-  .vrb .btn {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 2.5;
-    font-size: 1rem;
-    padding: 0 1rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #8FAC58;
-    color: #fff; }
-
 /*# sourceMappingURL=app.css.map */
